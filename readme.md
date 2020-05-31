@@ -6,3 +6,7 @@ A simple registration frontend for displaying how integration between frontend a
 ## Tools
 - Golang
 - Docker
+
+## screenshot
+
+![image](rhpam-ui.png)
