@@ -9,4 +9,10 @@ A simple registration frontend for displaying how integration between frontend a
 
 ## screenshot
 
+#### Registration UI
 ![image](rhpam-ui.png)
+
+----
+
+#### After Registration UI
+![image](rhpam-ui-2.png)
