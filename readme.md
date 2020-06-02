@@ -15,4 +15,4 @@ A simple registration frontend for displaying how integration between frontend a
 ----
 
 #### After Registration UI
-![image](rhpam-ui-2.png)
+![image](rhpam-ui-4.png)
