@@ -15,7 +15,9 @@
         #success_message {
             display: none;
         }
-
+        #anime_image {
+            display: none;
+        }
         #fail_message {
             display: none;
         }
@@ -48,6 +50,15 @@
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <input name="age" placeholder="" class="form-control" type="number">
                     </div>
+                </div>
+            </div>
+
+            <div class="form-group text-center" id="anime_image">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <img src="" id="imageUrl" />
+                    <br />
+                    <h3 id="name"></h3>
                 </div>
             </div>
 
@@ -86,6 +97,11 @@
             submitHandler: function(validator, form, submitButton) {
                 $.post(form.attr('action'), form.serialize(), function (result) {
                     $('#contact_form').data('bootstrapValidator').resetForm();
+
+                    $("#imageUrl").attr("src",result.imageUrl);
+                    $("#name").text(result.name);
+
+                    $("#anime_image").slideDown({opacity: "show"}, "slow");
 
                     if(result.message==='success')
                         $('#success_message').slideDown({opacity: "show"}, "slow");
