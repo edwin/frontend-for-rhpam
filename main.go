@@ -96,7 +96,7 @@ func ParseXmlToGenerateResponse(xmlContent []byte) string {
 				success = "failed"
 			}
 		}
-		if variableInstance.Name == "name" {
+		if variableInstance.Name == "nameResponse" {
 			name = variableInstance.Value
 		}
 		if variableInstance.Name == "imageUrl" {
